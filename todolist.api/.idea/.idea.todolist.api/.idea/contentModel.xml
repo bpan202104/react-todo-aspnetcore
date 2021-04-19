@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\bpa\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\bpa\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_todolist.api.1959451331.00" t="ExcludeRecursive" />
+    <e p="C:\Users\bpa\AppData\Roaming\JetBrains\Rider2020.3\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\bpa\cont\react-todo-aspnetcore\todolist.api" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="todolist.api" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="TaskController.cs" t="Include" />
+        </e>
+        <e p="DAL" t="Include">
+          <e p="ITaskQueries.cs" t="Include" />
+          <e p="TasksContext.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20191214160919_InitialCreate.cs" t="Include" />
+          <e p="20191214160919_InitialCreate.Designer.cs" t="Include" />
+          <e p="TaskContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Model" t="Include">
+          <e p="TodoTask.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="todolist.api.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Providers" t="Include">
+          <e p="MySqlConnectionProvider.cs" t="Include" />
+        </e>
+        <e p="Queries" t="Include" />
+        <e p="Startup.cs" t="Include" />
+        <e p="todolist.api.csproj" t="IncludeRecursive" />
+        <e p="WeatherForecast.cs" t="Include" />
+      </e>
+      <e p="todolist.api.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>

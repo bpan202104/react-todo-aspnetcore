@@ -5,8 +5,10 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using Microsoft.VisualBasic;
 using Newtonsoft.Json;
 using todolist.api.Model;
+using todolist.api.Queries;
 
 namespace todolist.api.Controllers
 {
@@ -16,34 +18,33 @@ namespace todolist.api.Controllers
     {
 
         private readonly ILogger<TaskController> _logger;
-        private readonly TaskContext _db;
+        private readonly ITaskQueries _taskQueries;
 
-        public TaskController(ILogger<TaskController> logger, TaskContext db)
+        public TaskController(ILogger<TaskController> logger, ITaskQueries taskQueries)
         {
             this._logger = logger;
-            this._db = db;
+            this._taskQueries = taskQueries;
         }
 
         // GET: api/Task
         [HttpGet]
-        public List<TodoTask> Get()
+        public async Task<List<TodoTask>> Get()
         {
-            return _db.Tasks.ToList();
+            return (await _taskQueries.ListTasks()).ToList();
         }
 
         // GET: api/Task/5
         [HttpGet("{id}", Name = "Get")]
-        public TodoTask Get(Guid id)
+        public async Task<TodoTask> Get(Guid id)
         {
-            return _db.Tasks.Where(t => t.Id == id).First();
+            return await _taskQueries.GetById(id);
         }
 
         // POST: api/Task
         [HttpPost]
-        public IActionResult Post([FromBody] TodoTask newTask)
+        public async Task<IActionResult> Post([FromBody] TodoTask newTask)
         {
-            _db.Tasks.Add(newTask);
-            _db.SaveChanges();
+            await _taskQueries.Create(newTask);
             _logger.LogInformation("Adding task {task}", JsonConvert.SerializeObject(newTask));
             return CreatedAtAction("Get", new { id = newTask.Id });
         }
@@ -51,10 +52,9 @@ namespace todolist.api.Controllers
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(Guid id)
+        public async Task<IActionResult> Delete(Guid id)
         {
-            _db.Tasks.RemoveRange(_db.Tasks.Where(t => t.Id == id));
-            _db.SaveChanges();
+            await _taskQueries.DeleteById(id);
             return NoContent();
         }
     }
