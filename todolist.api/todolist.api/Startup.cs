@@ -11,6 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using todolist.api.Providers;
+using todolist.api.Queries;
 
 namespace todolist.api
 {
@@ -37,6 +39,8 @@ namespace todolist.api
             {
                 opts.UseMySql(Configuration.GetConnectionString("TaskContext"));
             });
+            services.AddSingleton<IDbConnectionProvider, MySqlConnectionProvider>();
+            services.AddSingleton<ITaskQueries, TaskQueriesDapper>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,8 +63,11 @@ namespace todolist.api
                 endpoints.MapControllers();
             });
 
-            var db = app.ApplicationServices.GetService<TaskContext>();
-            db.Database.Migrate();
+            using (var serviceScope = app.ApplicationServices.CreateScope())
+            {
+                var db = serviceScope.ServiceProvider.GetService<TaskContext>();
+                db.Database.Migrate();
+            }
 
         }
     }

@@ -16,6 +16,11 @@ namespace todolist.api.Providers
         {
             _connectionString = connectionString;
         }
+        
+        public MySqlConnectionProvider()
+        {
+            _connectionString = "server=127.0.0.1;database=todoapp;user ID=root;password=my-secret-pw;port=3306;";
+        }        
  
         public IDbConnection GetDbConnection()
         {

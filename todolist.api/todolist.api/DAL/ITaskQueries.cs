@@ -27,7 +27,7 @@ namespace todolist.api.Queries
         }
         public async Task<IEnumerable<TodoTask>> ListTasks()
         {
-            var sql = "Select * From TodoTask";
+            var sql = "Select * From Tasks";
             using (var connection = _provider.GetDbConnection())
             {
                 var tasks = await connection.QueryAsync<TodoTask>(sql);
@@ -37,10 +37,10 @@ namespace todolist.api.Queries
 
         public async Task<TodoTask> GetById(Guid id)
         {
-            var sql = "Select * From TodoTask Where Id = @Id";
+            var sql = "Select * From Tasks Where Id = @Id";
             using (var connection = _provider.GetDbConnection())
             {
-                var task = await connection.QueryFirstOrDefaultAsync<TodoTask>(sql,  new {Id = id});
+                var task = await connection.QueryFirstAsync<TodoTask>(sql,  new {Id = id});
                 return task;
             }
         }

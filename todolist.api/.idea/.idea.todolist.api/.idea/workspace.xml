@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c104be0b-587e-4d90-b270-4411a400dee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/appsettings.Development.json" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/appsettings.Development.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/todolist.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/todolist.api.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,16 +26,20 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/76EC9956-A97F-4729-B1C0-9E2A5A239D3E/1E0/ExceptionDispatchInfo.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/94688575-A802-42EA-A369-8B2815829D8C/67/544c7218/MySqlDbContextOptionsExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/026F34EA-BAF3-4417-A4D1-FEE03B871966/A/DbContext.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1ADF0657-1585-46E0-8D0C-702F997D04A8/94/184caf4a/HostingLoggerExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/026F34EA-BAF3-4417-A4D1-FEE03B871966/c6/161694c9/EntityFrameworkServiceCollectionExtensions.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/todolist.api/appsettings.Development.json" />
-      <option value="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Queries/ITaskQueries.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Startup.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rOiQ6mvIGHkimyKJp8Tv5XlZGc" />
@@ -93,14 +97,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1618853518045</updated>
-      <workItem from="1618853550475" duration="8368000" />
+      <workItem from="1618853550475" duration="10836000" />
+      <workItem from="1618922721154" duration="7732000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -112,8 +117,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs</url>
+          <line>46</line>
+          <properties documentPath="C:\Users\bpa\cont\react-todo-aspnetcore\todolist.api\todolist.api\Controllers\TaskController.cs" initialLine="46" containingFunctionPresentation="method 'Post'">
+            <startOffsets>
+              <option value="1254" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1289" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs</url>
+          <line>51</line>
+          <properties documentPath="C:\Users\bpa\cont\react-todo-aspnetcore\todolist.api\todolist.api\DAL\ITaskQueries.cs" initialLine="51" containingFunctionPresentation="method 'Create'">
+            <startOffsets>
+              <option value="1518" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1550" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
