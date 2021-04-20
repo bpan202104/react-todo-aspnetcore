@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c104be0b-587e-4d90-b270-4411a400dee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todolist.api/DAL/IDbConnectionProvider.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist.api/Model/TodoTaskList.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist.api/Controllers/TaskListController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/todolist.api/Model/EmptyTodoTaskList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/DAL/Providers/MySqlConnectionProvider.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/todolist.api/todolist.api.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/todolist.api.csproj" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +43,8 @@
       <option value="$PROJECT_DIR$/todolist.api/DAL/IDbConnectionProvider.cs" />
       <option value="$PROJECT_DIR$/todolist.api/DAL/Providers/MySqlConnectionProvider.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Startup.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Model/EmptyTodoTaskList.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Controllers/TaskListController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rOiQ6mvIGHkimyKJp8Tv5XlZGc" />
@@ -105,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1618853518045</updated>
       <workItem from="1618853550475" duration="10836000" />
-      <workItem from="1618922721154" duration="11380000" />
+      <workItem from="1618922721154" duration="12659000" />
     </task>
     <servers />
   </component>
