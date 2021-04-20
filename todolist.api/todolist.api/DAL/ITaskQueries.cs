@@ -4,8 +4,8 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using Dapper;
 using Dapper.Contrib.Extensions;
+using todolist.api.DAL;
 using todolist.api.Model;
-using todolist.api.Providers;
 
 namespace todolist.api.Queries
 {

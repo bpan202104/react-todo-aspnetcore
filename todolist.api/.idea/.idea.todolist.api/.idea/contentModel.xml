@@ -14,7 +14,11 @@
           <e p="TaskController.cs" t="Include" />
         </e>
         <e p="DAL" t="Include">
+          <e p="IDbConnectionProvider.cs" t="Include" />
           <e p="ITaskQueries.cs" t="Include" />
+          <e p="Providers" t="Include">
+            <e p="MySqlConnectionProvider.cs" t="Include" />
+          </e>
           <e p="TasksContext.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
@@ -24,6 +28,7 @@
         </e>
         <e p="Model" t="Include">
           <e p="TodoTask.cs" t="Include" />
+          <e p="TodoTaskList.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -36,10 +41,6 @@
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
         </e>
-        <e p="Providers" t="Include">
-          <e p="MySqlConnectionProvider.cs" t="Include" />
-        </e>
-        <e p="Queries" t="Include" />
         <e p="Startup.cs" t="Include" />
         <e p="todolist.api.csproj" t="IncludeRecursive" />
         <e p="WeatherForecast.cs" t="Include" />

@@ -11,7 +11,8 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using todolist.api.Providers;
+using todolist.api.DAL;
+using todolist.api.DAL.Providers;
 using todolist.api.Queries;
 
 namespace todolist.api
@@ -39,8 +40,10 @@ namespace todolist.api
             {
                 opts.UseMySql(Configuration.GetConnectionString("TaskContext"));
             });
+            services.Configure<DbConnectionProviderSettings>(opts => opts.ConnectionString = Configuration.GetConnectionString("TaskContext"));
             services.AddSingleton<IDbConnectionProvider, MySqlConnectionProvider>();
             services.AddSingleton<ITaskQueries, TaskQueriesDapper>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

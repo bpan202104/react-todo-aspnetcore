@@ -1,12 +1,10 @@
 ﻿using System.Data;
+using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
 
-namespace todolist.api.Providers
+namespace todolist.api.DAL.Providers
 {
-    public interface IDbConnectionProvider
-    {
-        IDbConnection GetDbConnection();
-    }
+
 
     public class MySqlConnectionProvider : IDbConnectionProvider
     {
@@ -17,9 +15,9 @@ namespace todolist.api.Providers
             _connectionString = connectionString;
         }
         
-        public MySqlConnectionProvider()
+        public MySqlConnectionProvider(IOptions<DbConnectionProviderSettings> settings)
         {
-            _connectionString = "server=127.0.0.1;database=todoapp;user ID=root;password=my-secret-pw;port=3306;";
+            _connectionString = settings.Value.ConnectionString;
         }        
  
         public IDbConnection GetDbConnection()
