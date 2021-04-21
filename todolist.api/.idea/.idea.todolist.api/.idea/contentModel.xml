@@ -28,7 +28,6 @@
           <e p="TaskContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Model" t="Include">
-          <e p="EmptyTodoTaskList.cs" t="Include" />
           <e p="TodoTask.cs" t="Include" />
           <e p="TodoTaskList.cs" t="Include" />
         </e>

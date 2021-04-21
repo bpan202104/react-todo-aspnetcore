@@ -7,8 +7,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.VisualBasic;
 using Newtonsoft.Json;
+using todolist.api.DAL;
 using todolist.api.Model;
-using todolist.api.Queries;
 
 namespace todolist.api.Controllers
 {
@@ -34,19 +34,19 @@ namespace todolist.api.Controllers
         }
 
         // GET: api/Task/5
-        [HttpGet("{id}", Name = "Get")]
+        [HttpGet("{id}", Name = "GetTask")]
         public async Task<TodoTask> Get(Guid id)
         {
-            return await _taskQueries.GetById(id);
+            return await _taskQueries.GetTaskById(id);
         }
 
         // POST: api/Task
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] TodoTask newTask)
         {
-            await _taskQueries.Create(newTask);
+            await _taskQueries.CreateTask(newTask);
             _logger.LogInformation("Adding task {task}", JsonConvert.SerializeObject(newTask));
-            return CreatedAtAction("Get", new { id = newTask.Id });
+            return CreatedAtAction("Post", new { id = newTask.Id });
         }
 
 
@@ -54,7 +54,7 @@ namespace todolist.api.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(Guid id)
         {
-            await _taskQueries.DeleteById(id);
+            await _taskQueries.DeleteTaskById(id);
             return NoContent();
         }
     }

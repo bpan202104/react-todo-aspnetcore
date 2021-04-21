@@ -10,5 +10,7 @@ namespace todolist.api.Model
         public string Name { get; set; }
         [ExplicitKey]
         public Guid Id { get; set; }
+
+        public Guid? TaskListId { get; set; }
     }
 }

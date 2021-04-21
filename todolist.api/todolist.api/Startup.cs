@@ -13,7 +13,6 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using todolist.api.DAL;
 using todolist.api.DAL.Providers;
-using todolist.api.Queries;
 
 namespace todolist.api
 {

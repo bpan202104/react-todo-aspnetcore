@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c104be0b-587e-4d90-b270-4411a400dee5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/todolist.api/Controllers/TaskListController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/todolist.api/Model/EmptyTodoTaskList.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.todolist.api/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Controllers/TaskListController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Controllers/TaskListController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Migrations/20191214160919_InitialCreate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Migrations/20191214160919_InitialCreate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Migrations/TaskContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Migrations/TaskContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Model/EmptyTodoTaskList.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Model/TodoTaskList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Model/TodoTaskList.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/todolist.api/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/todolist.api/Startup.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,18 +40,20 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/todolist.api/appsettings.Development.json" />
-      <option value="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Queries/ITaskQueries.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Providers/MySqlConnectionProvider.cs" />
-      <option value="$PROJECT_DIR$/todolist.api/Model/TodoTaskList.cs" />
-      <option value="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" />
-      <option value="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" />
       <option value="$PROJECT_DIR$/todolist.api/DAL/DbConnectionProvider.cs" />
       <option value="$PROJECT_DIR$/todolist.api/DAL/IDbConnectionProvider.cs" />
       <option value="$PROJECT_DIR$/todolist.api/DAL/Providers/MySqlConnectionProvider.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Startup.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Model/EmptyTodoTaskList.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Model/TodoTask.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Migrations/TaskContextModelSnapshot.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Controllers/TaskController.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Migrations/20191214160919_InitialCreate.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/Model/TodoTaskList.cs" />
       <option value="$PROJECT_DIR$/todolist.api/Controllers/TaskListController.cs" />
+      <option value="$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1rOiQ6mvIGHkimyKJp8Tv5XlZGc" />
@@ -54,7 +63,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3501355" />
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.35022807" />
     <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.0" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -132,16 +141,29 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs</url>
-          <line>51</line>
-          <properties documentPath="C:\Users\bpa\cont\react-todo-aspnetcore\todolist.api\todolist.api\DAL\ITaskQueries.cs" initialLine="51" containingFunctionPresentation="method 'Create'">
+          <line>71</line>
+          <properties documentPath="C:\Users\bpa\cont\react-todo-aspnetcore\todolist.api\todolist.api\DAL\ITaskQueries.cs" initialLine="70" containingFunctionPresentation="method 'CreateTaskList'">
             <startOffsets>
-              <option value="1512" />
+              <option value="2205" />
             </startOffsets>
             <endOffsets>
-              <option value="1544" />
+              <option value="2247" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/todolist.api/DAL/ITaskQueries.cs</url>
+          <line>84</line>
+          <properties documentPath="C:\Users\bpa\cont\react-todo-aspnetcore\todolist.api\todolist.api\DAL\ITaskQueries.cs" initialLine="81" containingFunctionPresentation="lambda expression inside method 'GetTaskList'">
+            <startOffsets>
+              <option value="2823" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2844" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

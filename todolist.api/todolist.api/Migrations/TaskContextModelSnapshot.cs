@@ -29,6 +29,20 @@ namespace todolist.api.Migrations
 
                     b.ToTable("Tasks");
                 });
+            modelBuilder.Entity("todolist.api.Model.TodoTaskList", b =>
+            {
+                b.Property<Guid>("Id")
+                    .ValueGeneratedOnAdd()
+                    .HasColumnType("char(36)");
+
+                b.Property<string>("Name")
+                    .HasColumnType("longtext CHARACTER SET utf8mb4");
+
+                b.HasKey("Id");
+
+                b.ToTable("TaskLists");
+            });            
+            
 #pragma warning restore 612, 618
         }
     }
